@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+  <h1>Employee Management</h1>
+
+  <!-- Add Employee -->
+  <div class="card">
+    <input type="text" id="empName" placeholder="Employee Name">
+    <input type="text" id="empRole" placeholder="Employee Role">
+    <button onclick="addEmployee()">Add Employee</button>
+  </div>
+
+  <!-- Search -->
+  <input type="text" id="search" placeholder="Search employee..." onkeyup="searchEmployee()">
+
+  <!-- Employee Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="employeeTable"></tbody>
+  </table>
+
+ <button class="logout" onclick="logout()">Logout</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
